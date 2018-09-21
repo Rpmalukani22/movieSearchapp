@@ -24,6 +24,9 @@
     });
    
  });
-app.listen(process.env.PORT,process.env.IP,()=>{
-   console.log("Server started !!") ;
+// app.listen(process.env.PORT,process.env.IP,()=>{
+//   console.log("Server started !!") ;
+// });
+app.listen(process.env.PORT || 3000, function(){
+  console.log('listening on',app.address().port);
 });
