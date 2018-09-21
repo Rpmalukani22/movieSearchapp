@@ -1,0 +1,8 @@
+<h1>Here we go!!</h1>
+<% if(movieData) {%>
+<% for(var i=0;i<movieData.length;i++){%>
+<img src= <%= movieData[i].Poster %> >
+<% } %>
+<%} else{%>
+<h3>sorry no data found!</h3>
+<% } %>
